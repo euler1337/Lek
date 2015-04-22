@@ -1,4 +1,6 @@
 #pragma once
+
+//Template this
 class matrix
 {
 public:
@@ -6,3 +8,4 @@ public:
 	~matrix();
 };
 
+ 
