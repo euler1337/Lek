@@ -3,12 +3,26 @@
 
 #include <iostream>
 #include "storage.h"
+#include "matrix.h"
 
-int main()
+int main() 
 {
+
+	int* Hej = new(int);
 	
-	storage<double> dStorage(17);
-	std::cout << dStorage.size() << std::endl;
+	matrix<int> mInt(6, 6, 1);
+
+	matrix<std::string> mStr(2,2,"hej");
+
+	matrix<double> mDouble(4, 2, 13.0);
+
+	mInt.set(0, 0, 7);
+	mInt.set(5, 5, 2);
+	mInt.set(1, 0, 3);
+
+	mInt.display();
+	mStr.display();
+	mDouble.display();
 
 	return 0;
 }

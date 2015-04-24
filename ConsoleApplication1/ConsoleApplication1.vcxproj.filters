@@ -18,10 +18,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="matrix.cpp">
+    <ClCompile Include="harness.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="harness.cpp">
+    <ClCompile Include="subject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="subject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

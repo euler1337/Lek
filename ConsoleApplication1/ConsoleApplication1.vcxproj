@@ -80,11 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="harness.cpp" />
-    <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="subject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="matrix.h" />
     <ClInclude Include="storage.h" />
+    <ClInclude Include="subject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
