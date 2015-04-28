@@ -5,6 +5,6 @@ public:
 	subject();
 	~subject();
 
-	operator(){};
+//	operator(){};
 };
 
