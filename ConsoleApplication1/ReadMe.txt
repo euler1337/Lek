@@ -1,3 +1,18 @@
+Implement basic C++ classes in order to learn the language:
+
+- Matrix class (/)
+- Linked List (x)
+
+Usage of C++ standard library in order to learn it:
+
+- Container classes (/)
+- Smart pointers
+
+Python:
+- Make website in FLASK: - To compile C++?
+
+
+
 ========================================================================
     CONSOLE APPLICATION : ConsoleApplication1 Project Overview
 ========================================================================
