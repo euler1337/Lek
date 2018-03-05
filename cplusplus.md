@@ -200,6 +200,45 @@ virtual void MyMethod() = 0; //Pure virtual method
 ```
 Objects deriving from an abstract class must implement all pure virtual methods in the abstract class. Pure virtual methods can also be accesed by pointers to the abstract class.
 
+## Templates
+
+### Function templates
+Function templates could be used to implement a single function valid for different datatypes. For example:
+``` c++
+template <typename T>
+T min(T a, T b) 
+{
+  return (a < b ? a : b);
+}
+```
+A function template is instantiated at compile time. 
+``` c++
+x = min(2, 17);
+x = min('p', 'a'); 
+```
+Every instantation is a new function! All definitions will be inline and hence the template code must be in the headerfile.
+
+### Class templates
+Class templates could be used to implement a class for an arbitrary datatype. For example: 
+``` c++
+template <typename T> 
+class stack {
+  T* stk; 
+  ...
+  void push(T x);
+};
+```
+A class template must be explicitly instantiated: 
+``` c++
+stack<int> s{};
+```
+
+### Value parameters
+A value parameter for a template is parameter which is not a datatype but a value. For example, the stack class could use a __size__ value parameter. __Note__ Each unique instantiation will create a new class (not class instance). Hence, compile-time could increase rapidly if value parameters is used without care. 
+
+
+
+
 
 
 
